@@ -1,0 +1,12 @@
+name: 'Redesigned Enigma'
+description: 'Example Action'
+inputs:
+  greetee:
+    description: 'Greetee'
+    required: true
+    default: 'World'
+runs:
+  using: "composite"
+  steps:
+    - run: echo Hello ${{ inputs.greetee }}
+      shell: bash
