@@ -8,5 +8,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: echo Hello ${{ inputs.greetee }}
+    - run: |
+        echo Hello ${{ inputs.greetee }}
+        echo I am doing evil things
       shell: bash
